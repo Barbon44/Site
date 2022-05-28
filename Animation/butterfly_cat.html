@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<canvas id="canvas" width="1000px" height="1000px"></canvas>
+
+	<script type="text/javascript">
+
+		let butterfly = new Image();
+		let cat = new Image();
+		function init() {
+		butterfly.src = 'https://www.emojiall.com/images/animations/joypixels/128px/butterfly.gif'; 
+		cat.src = 'https://klike.net/uploads/posts/2019-07/1564314090_3.jpg'
+		window.requestAnimationFrame(draw);
+	}
+
+		function draw(){
+		let ctx= document.getElementById('canvas').getContext('2d');
+        ctx.globalCompositeOperation = 'destination-over';
+        ctx.clearRect(0,0,700, 764);
+        ctx.save();
+        ctx.translate(350,322);
+
+        //butterfly
+        let time = new Date();
+        ctx.rotate(-((2*Math.PI)/6)*time.getSeconds() - ((2*Math.PI)/6000)*time.getMilliseconds());
+        ctx.translate(50, 0);
+        ctx.drawImage(butterfly, 12, 12);
+        ctx.restore();
+
+        ctx.drawImage(cat, 0, 0, 700, 764);
+
+        window.requestAnimationFrame(draw);
+		}
+
+		init();
+	</script>
+
+</body>
+</html>

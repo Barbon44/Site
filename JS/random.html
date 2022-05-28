@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random</title>
+     <meta charset="utf-8">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lobster&family=Pacifico&family=Quintessential&family=Rowdies:wght@300&family=Supermercado+One&display=swap" rel="stylesheet">
+     <style type="text/css">
+          body{
+               color: khaki;
+               background: darkgreen;
+               font-family: 'Supermercado One', cursive;
+               font-size: 40px;
+
+          }
+     </style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let a = Math.floor(Math.random()*101);
+	let b = Math.floor(Math.random()*101);
+	let min, max;
+     document.write("a="+a+"<br>");
+     document.write("b="+b+"<br>");
+     let sum = 0;
+
+     if (a>b) {
+     	max = a;
+     	min = b;
+     	document.write("Мінімальне: "+min+"<br>"+"Максимальне: "+max+"<br>");
+     	for(let count = min; count<=max; count++){
+     		sum = sum + count
+	}
+	document.write("Сума чисел в діапазоні від "+min+ " до "+max+ " дорівнює: "+ sum);
+     }else if(a<b){
+     	min = a;
+     	max = b;
+     	document.write("Мінімальне: "+min+"<br>"+"Максимальне: "+max+"<br>");
+     	for(let count = min; count<=max; count++){
+     		sum = sum + count
+     	}
+     	document.write("Сума чисел в діапазоні від "+min+ " до "+max+ " дорівнює: "+ sum);
+     	}else if(a==b){
+     	document.write("a=b");
+     }
+     
+	</script>
+
+</body>
+</html>

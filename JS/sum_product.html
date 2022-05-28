@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Pacifico&family=Supermercado+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Sum</title>
+	<style type="text/css">
+		body{
+			color: green;
+			font-family: 'Supermercado One', cursive;
+			font-size: 60px;
+			text-shadow: lime 2pt -2pt; 
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		alert('Вам потрібно ввести два числа, якщо перше число буде більше, то ми покажемо Вам суму, якщо ж навпаки(друге число більше), то Ви отримаєте добуток')
+		let number1 = +prompt("Введіть перше ціле число", '');
+		let number2 = +prompt("Введіть друге ціле число", '');
+		document.write("Перше число "+number1+"<br>");
+		document.write("Друге число "+number2+"<br>");
+
+		if (number1 > number2) {
+			document.write("Сума чисел "+(number2+number1)+"<br>");
+		}else if(number2>number1){
+			document.write("Добуток чисел "+number2*number1+"<br>");
+		}else if(number1===number2){
+			document.write('Ви ввели два однакових числа'+"<br>");
+		}else{
+			alert('Введіть числа');
+		}
+	</script>
+
+</body>
+</html>

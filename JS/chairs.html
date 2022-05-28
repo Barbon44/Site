@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Lobster&family=Pacifico&family=Supermercado+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Chairs</title>
+	<style type="text/css">
+		body{
+			color: magenta;
+			font-size: 60px;
+			text-shadow: pink 2pt -2pt;
+			font-family: 'Comforter', cursive;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let numberPupils = prompt("Введіть кількість учнів", '');
+		let numberChairs = prompt("Введіть кількість стільців", '');
+		document.write("Кількість учнів "+numberPupils+"<br>");
+		document.write("Кількість стільців "+numberChairs+"<br>");
+
+		
+		if (numberPupils > numberChairs) {
+			document.write("Не вистачає стільців: "+(numberPupils - numberChairs)+"<br>");
+		}else if(numberChairs>numberPupils){
+			document.write("Зайвих стільців: "+(numberChairs - numberPupils)+"<br>");
+		}else if(numberPupils===numberChairs){
+			document.write('Стільців вистачає'+"<br>");
+		}else{
+			alert('Введіть цілі числа');
+		}
+		
+	</script>
+
+</body>
+</html>

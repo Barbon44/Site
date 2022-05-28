@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<canvas id="myCanvas" width="2000px" height="1000px"></canvas>
+
+	<script type="text/javascript">
+		let canvas = document.getElementById('myCanvas');
+        let cxt = canvas.getContext('2d');
+
+        let x = 20;
+        let y = 20;
+        let r = -25;
+        let width = 100; 
+        let height = 100;
+    
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "red";
+    cxt.fillRect (x + (0 * width) + (0 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "orange";
+    cxt.fillRect (x + (1 * width) + (1 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "yellow";
+    cxt.fillRect (x + (2 * width) + (2 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "green";
+    cxt.fillRect (x + (3 * width) + (3 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "blue";
+    cxt.fillRect (x + (4 * width)+(4 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "purple";
+    cxt.fillRect (x + (5 * width) + (5 * r), y, width, height);
+    cxt.globalAlpha = 0.5;
+    cxt.fillStyle = "pink";
+    cxt.fillRect (x + (6 * width) + (6 * r), y, width, height);
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<canvas id="myCanvas" width="1300px" height="1000px"></canvas>
+
+	<script type="text/javascript">
+
+		let canvas = document.getElementById('myCanvas');
+        let cxt = canvas.getContext('2d');
+
+		let number = prompt('Який котик ви сьогодні: 1) закоханий; 2) здивований; 3) ангел; 4) крутий; 5) заплаканий; 6) радісний; 7) незадоволений; 8) сумний; 9) чортенятко; 10) зніяковілий', '')
+
+		if (number==1){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.moveTo(660,275);
+        cxt.quadraticCurveTo(680, 265, 690, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //праве око
+        cxt.beginPath();
+        cxt.moveTo(710,275);
+        cxt.quadraticCurveTo(725, 265, 740, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот-1
+        cxt.beginPath();
+        cxt.moveTo(700,325);
+        cxt.lineTo(710,330);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот-2
+        cxt.beginPath();
+        cxt.moveTo(710,330);
+        cxt.lineTo(700,335);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот-3
+        cxt.beginPath();
+        cxt.moveTo(700,335);
+        cxt.lineTo(710,340);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот-4
+        cxt.beginPath();
+        cxt.moveTo(710,340);
+        cxt.lineTo(700,345);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //сердце-квадрат
+        cxt.fillStyle = 'red';
+        cxt.fillRect(720, 320, 16, 16);
+
+        //сердце-1
+        cxt.beginPath();
+        cxt.arc(728, 322, 8, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'red'
+        cxt.fill();
+
+        //сердце-2
+        cxt.beginPath();
+        cxt.arc(734, 328, 8, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'red'
+        cxt.fill();
+		}else if(number==2){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.arc(670, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //праве око
+        cxt.beginPath();
+        cxt.arc(730, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //лівий зрачок
+        cxt.beginPath();
+        cxt.arc(673, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill();
+
+        //правий зрачок
+        cxt.beginPath();
+        cxt.arc(733, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill(); 
+
+        //рот
+        cxt.beginPath();
+        cxt.arc(700, 335, 10, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+         //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+		}else if(number==3){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.moveTo(660,275);
+        cxt.quadraticCurveTo(675, 260, 690, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //праве око
+        cxt.beginPath();
+        cxt.moveTo(710,275);
+        cxt.quadraticCurveTo(725, 260, 740, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 355, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //німб
+        cxt.beginPath();
+        cxt.ellipse(700, 205, 20, 75, Math.PI/2, 0, 2 * Math.PI);
+        cxt.strokeStyle = 'lightblue';
+        cxt.lineWidth = 3;
+        cxt.stroke();
+		}else if(number==4){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //окуляри-ліве
+        cxt.beginPath();
+        cxt.arc(670, 270, 30, 0*Math.PI, Math.PI, false);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //окуляри-праве
+        cxt.beginPath();
+        cxt.arc(730, 270, 30, 0*Math.PI, Math.PI, false);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 355, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+		}else if(number==5){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.moveTo(660,275);
+        cxt.quadraticCurveTo(680, 265, 690, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //праве око
+        cxt.beginPath();
+        cxt.moveTo(710,275);
+        cxt.quadraticCurveTo(725, 265, 740, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот
+        cxt.beginPath();
+        cxt.arc(700, 335, 10, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+        
+        //сльоза-ліва
+        cxt.beginPath();
+        cxt.moveTo(675,286);
+        cxt.lineTo(675,366);
+        cxt.lineWidth = 30;
+        cxt.strokeStyle = 'lightblue';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //сльоза-права
+        cxt.beginPath();
+        cxt.moveTo(725,286);
+        cxt.lineTo(725,366);
+        cxt.lineWidth = 30;
+        cxt.strokeStyle = 'lightblue';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+		}else if(number==6){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.moveTo(660,275);
+        cxt.quadraticCurveTo(675, 260, 690, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //праве око
+        cxt.beginPath();
+        cxt.moveTo(710,275);
+        cxt.quadraticCurveTo(725, 260, 740, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 355, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+		}else if(number==7){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.arc(670, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //праве око
+        cxt.beginPath();
+        cxt.arc(730, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //лівий зрачок
+        cxt.beginPath();
+        cxt.arc(673, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill();
+
+        //правий зрачок
+        cxt.beginPath();
+        cxt.arc(733, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill(); 
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,340);
+        cxt.quadraticCurveTo(700, 310, 740, 340);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+		}else if(number==8){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.arc(670, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //праве око
+        cxt.beginPath();
+        cxt.arc(730, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //лівий зрачок
+        cxt.beginPath();
+        cxt.arc(673, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill();
+
+        //правий зрачок
+        cxt.beginPath();
+        cxt.arc(733, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill(); 
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 320, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //сльоза права
+        cxt.beginPath();
+        cxt.arc(735, 300, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'lightblue'
+        cxt.fill();
+		}else if(number==9){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'purple'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.arc(670, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //праве око
+        cxt.beginPath();
+        cxt.arc(730, 280, 15, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'black'
+        cxt.fill();
+
+        //лівий зрачок
+        cxt.beginPath();
+        cxt.arc(670, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill();
+
+        //правий зрачок
+        cxt.beginPath();
+        cxt.arc(730, 280, 5, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'white'
+        cxt.fill(); 
+
+        //ліва брівка
+        cxt.beginPath();
+        cxt.moveTo(660,255);
+        cxt.lineTo(690,265);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //права брівка
+        cxt.beginPath();
+        cxt.moveTo(740,255);
+        cxt.lineTo(710,265);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 355, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'purple';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'purple';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+		}else if(number==10){
+		//голова
+        cxt.beginPath();
+        cxt.arc(700, 300, 75, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'gold'
+        cxt.fill();
+
+        //ліве око
+        cxt.beginPath();
+        cxt.moveTo(665,275);
+        cxt.quadraticCurveTo(675, 260, 685, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //праве око
+        cxt.beginPath();
+        cxt.moveTo(715,275);
+        cxt.quadraticCurveTo(725, 260, 735, 275);
+        cxt.lineWidth = 3;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'round';
+        cxt.stroke();
+
+        //рот
+        cxt.beginPath();
+        cxt.moveTo(660,330);
+        cxt.quadraticCurveTo(700, 355, 740, 330);
+        cxt.lineWidth = 3;
+        cxt.lineCap = 'round';
+        cxt.strokeStyle = 'black';
+        cxt.stroke();
+
+        //ліве вухо
+        cxt.beginPath();
+        cxt.moveTo(630,200);
+        cxt.lineTo(630,270);
+        cxt.lineTo(680,230);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //праве вухо
+        cxt.beginPath();
+        cxt.moveTo(770,200);
+        cxt.lineTo(717,226);
+        cxt.lineTo(770,270);
+        cxt.fillStyle = 'gold';
+        cxt.fill();
+
+        //нос
+        cxt.beginPath();
+        cxt.moveTo(700,310);
+        cxt.lineTo(690,300);
+        cxt.lineTo(710,300);
+        cxt.fillStyle = 'black';
+        cxt.fill();
+
+        //лівий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,305);
+        cxt.lineTo(590,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //лівий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(680,310);
+        cxt.lineTo(590,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий верхній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,305);
+        cxt.lineTo(810,290);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //правий нижній вусик
+        cxt.beginPath();
+        cxt.moveTo(720,310);
+        cxt.lineTo(810,325);
+        cxt.lineWidth = 1;
+        cxt.strokeStyle = 'black';
+        cxt.lineCap = 'butt';
+        cxt.stroke();
+
+        //крапелька-1
+        cxt.beginPath();
+        cxt.arc(750, 280, 10, 0*Math.PI, 2*Math.PI, true);
+        cxt.fillStyle = 'lightblue'
+        cxt.fill();
+
+        //крапелька-2
+        cxt.beginPath();
+        cxt.moveTo(760,280);
+        cxt.lineTo(745,270);
+        cxt.lineTo(750,250);
+        cxt.fillStyle = 'lightblue';
+        cxt.fill();
+		}else if(number > 10){
+			alert("Сердечно просимо мяу, але такого котика поки не існує (PS: мяу* - вибачення)");
+		}else if (isNaN(number)|| number == null) {
+		 	alert('goodmeow');
+		}
+
+	</script>
+
+</body>
+</html>

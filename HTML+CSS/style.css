@@ -1,0 +1,57 @@
+body{
+	background-color: pink;
+}
+
+#first, #forth{
+	width: 600px;
+	height: 600px;
+	background-color: red;
+	border: 20px double salmon;
+	margin: 20px;
+	border-radius: 10%;
+	box-shadow: 30px 30px 10px coral;
+}
+
+#second, #third{
+	background-color: darksalmon;
+	width: 600px;
+	height: 130px;
+	margin-left: 50px;
+	margin-top: 50px;
+	border: 10px dashed maroon;
+	border-radius: 10%;
+	box-shadow: 30px 30px 10px coral;
+}
+
+#forth{
+	border-right: 20px solid magenta;
+	border-left: 20px ridge darksalmon;
+	border-bottom: 20px dotted indianred;
+	border-radius: 10%;
+	box-shadow: 30px 30px 10px coral;
+}
+
+#div_1{
+	background-color: deeppink;
+	width: 400px;
+	height: 400px;
+	border: 20px dotted violet;
+	margin: auto;
+	border-radius: 10%;
+	box-shadow: 30px 30px 10px coral;
+}
+#div_2{
+	background-color: crimson;
+	width: 200px;
+	height: 200px;
+	border: 20px dashed hotpink;
+	margin: auto;
+	border-radius: 10%;
+	box-shadow: 30px 30px 10px coral;
+}
+
+p.text{
+	text-align: center; 
+	font-family: cursive; 
+	font-size: 30px;
+}

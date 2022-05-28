@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000" height="1000" style="border: 1px solid green;"></canvas>
+
+    <script>
+        
+    
+        let a = document.getElementById('myCanvas');
+        let axt = a.getContext('2d');
+       
+        axt.strokeStyle = 'red';
+        axt.lineWidth = 15;
+        axt.lineJoin = 'bevel';
+        axt.strokeRect(15,15,200,200);
+
+        axt.strokeStyle = 'blue';
+        axt.lineWidth = 15;
+        axt.lineJoin = 'miter';
+        axt.strokeRect(245,15,200,200);
+
+
+        axt.strokeStyle = 'green';
+        axt.lineWidth = 15;
+        axt.lineJoin = 'round';
+        axt.strokeRect(475,15,200,200);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		alert("Тут можна розв'язати квадратні рівняння");
+		let a = +prompt('Введіть першу змінну'), b = +prompt('Введіть другу змінну'), c = +prompt('Введіть третю змінну');
+
+		let D = b*b - 4*a*c;
+		 
+         if(a == false){
+         	alert("Ви не ввели змінну 'a' ");
+         } else if(b == false){
+         	alert("Ви не ввели змінну 'b'");
+         } else if(c == false){
+         	alert("Ви не ввели змінну 'c'");
+         } else if(D < 0){
+         	alert("Розв'язків немає");
+         } else if(D > 0){
+			alert("Рівняння має два розв'язки: " + (-b+Math.sqrt(D))/(2*a) + " та " + (-b-Math.sqrt(D))/(2*a)) ;
+		} else if(D == 0){
+			alert("Рівняння має два однакові розв'язки: " + -b/(2*a));
+		}else{
+			alert("Вводити можна лише числа");
+		}
+	</script>
+
+</body>
+</html>

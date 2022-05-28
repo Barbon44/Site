@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>buttons</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	body {
+  background: teal;
+}
+.double-border-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid lightblue;
+  color: white;
+  font-family: 'Lobster', cursive;
+  transition: .4s;
+}
+.double-border-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: .4s;
+}
+.double-border-button:hover:after {
+  border: dashed cyan;
+  background-color: rgba(127,255,212,0.3); 
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+</style>
+</head>
+<body>
+    <p style="font-size: 40px; background-color: lightblue; color: teal; font-family: 'Lobster', cursive; ">Ми робимо красиві кнопки</p>
+
+    <a href="gradient.html" target="blank" class="double-border-button">Gradient</a>
+    <a href="img.html" target="blank" class="double-border-button">Image</a>
+    <a href="run.html" target="blank" class="double-border-button">Run</a>
+    <a href="list.html" target="blank" class="double-border-button">List</a>
+    <a href="text.html" target="blank" class="double-border-button">Text</a>
+    <a href="dino.html" target="blank" class="double-border-button">Dino</a>
+    <a href="table.html" target="blank" class="double-border-button">Table</a>
+    <a href="periodic.html" target="blank" class="double-border-button">Periodic</a>
+    <a href="block.html" target="blank" class="double-border-button">Block</a>
+    <a href="javascript.html" target="blank" class="double-border-button">Javascript</a>
+    <a href="javascript2.html" target="blank" class="double-border-button">Javascript</a>
+    <a href="javascript3.html" target="blank" class="double-border-button">Javascript</a>
+    <a href="javascript4.html" target="blank" class="double-border-button">Javascript</a>
+</body>
+</html>

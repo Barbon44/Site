@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script type="text/javascript">
+		/*function showHi() {
+			alert('Привіт');
+		}
+		showHi()
+
+
+		function showHi() {
+			let hi = 'Привіт всім від функції';
+		}
+		showHi()
+
+		alert(hi); // не можна
+
+
+		let userName = 'ДокторХто';
+		function showHi() {
+			let hi = 'Привіт тобі ' +userName + ' від функції';
+			alert(hi);
+		}
+		showHi()
+
+
+		let userName = 'ДокторХто';
+		function showHi(userName, userSay) {
+			userName = userName + ' сказав: ';
+			alert(userName + userSay)
+		}
+		showHi('КапітанОчевидність', 'привіт');
+		showHi('Микола', 'і тобі привіт');
+
+
+        alert(Math.power(x,n));*/
+
+
+		let x = +prompt('Введіть x','');
+		let n = +prompt('Введіть n','');
+		let result = 1;
+		function degree(x, n) {
+			for (let i = 1; i <= n; i++) {
+			result = result*x;
+		}
+		return result;
+		};
+		
+		alert(degree(x, n));
+	</script>
+
+</body>
+</html>
